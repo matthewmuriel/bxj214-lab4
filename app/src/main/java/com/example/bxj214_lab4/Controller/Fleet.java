@@ -68,6 +68,16 @@ public class Fleet {
         return ship;
     }
 
+    public ArrayList<String> crewlist(String reg){
+        ArrayList<String> roster;
+        for (Starship s : starShips) {
+            if (s.getRegistry().equals(reg)){
+                roster = s.roster();
+            }
+        }
+        return roster;
+    }
+
     /**
      * A Getter Method that return the size of the starShips ArrayList
      *

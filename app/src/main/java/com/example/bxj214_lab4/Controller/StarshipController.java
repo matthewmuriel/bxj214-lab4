@@ -6,6 +6,8 @@ import android.widget.TextView;
 import com.example.bxj214_lab4.Model.Starship;
 import com.example.bxj214_lab4.R;
 
+import java.util.ArrayList;
+
 public class StarshipController {
     private final Activity activity;
     private Fleet fleet;
@@ -22,6 +24,8 @@ public class StarshipController {
     }
 
     public void update(String reg){
+        ArrayList<String> crewList = fleet.crewlist(reg);
+        System.out.println(crewList.toString());
         TextView registration = (TextView) activity.findViewById(R.id.registration);
         TextView starship = (TextView) activity.findViewById(R.id.starshipName);
 
