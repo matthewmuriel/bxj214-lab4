@@ -41,7 +41,9 @@ public class StarshipController {
         for (String c:crewList){
             tokens = c.split(",");
             TextView name = (TextView) activity.findViewById(activity.getResources().getIdentifier("crewName"+counter,"id", activity.getPackageName()));
+            TextView rank = (TextView) activity.findViewById(activity.getResources().getIdentifier("crewRank"+counter,"id", activity.getPackageName()));
             name.setText(tokens[0]);
+            rank.setText(tokens[1]);
             counter++;
         }
 
