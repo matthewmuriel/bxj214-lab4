@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bxj214-lab4</string>
+    <string name="logo">starfleet</string>
+    <string name="profileimg">picture</string>
+    <string name="button1">USS Enterprise\nNCC-1701-A</string>
+    <string name="button2">USS Enterprise\nNCC-1701-D</string>
+    <string name="button3">USS Voyager\nNCC-74656</string>
+</resources>
