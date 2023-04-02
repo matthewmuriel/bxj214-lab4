@@ -34,7 +34,7 @@ public class Fleet {
      * Scans the file for the first 3 strings and creates a crew list array based on the remaining information
      * A new starship object is then created based on the information.
      * After creation it then calls addStarShip to add the object to the starShips ArrayList
-     * @throws FileNotFoundException
+     * @throws RuntimeException
      */
     public void loadStarship(AssetManager manager){
         Scanner scan = null;
