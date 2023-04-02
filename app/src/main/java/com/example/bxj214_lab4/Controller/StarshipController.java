@@ -26,7 +26,7 @@ public class StarshipController {
 
     public void update(String reg){
         ArrayList<String> crewList = new ArrayList<String>();
-        Collections.copy(crewList,fleet.crewlist(reg));
+        crewList.addAll(fleet.crewlist(reg));
         System.out.println(crewList.toString());
         TextView registration = (TextView) activity.findViewById(R.id.registration);
         TextView starship = (TextView) activity.findViewById(R.id.starshipName);

@@ -74,7 +74,7 @@ public class Fleet {
         ArrayList<String> roster = new ArrayList<String>();
         for (Starship s : starShips) {
             if (s.getRegistry().equals(reg)){
-                Collections.copy(roster,s.roster());
+                roster.addAll(s.roster());
             }
         }
         return roster;
