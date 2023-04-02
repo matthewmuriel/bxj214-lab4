@@ -123,4 +123,16 @@ public class Starship {
         }
         return crewLog;
     }
+
+    public ArrayList<String> roster(){
+        ArrayList<String> roster = new ArrayList<String>();
+
+        for (CrewMember c : crewMembers){
+            roster.add(c.toString());
+        }
+        return roster;
+    }
+
 }
+
+

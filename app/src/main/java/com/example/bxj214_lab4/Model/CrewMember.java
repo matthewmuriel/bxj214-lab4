@@ -68,6 +68,6 @@ public class CrewMember {
      * toString method that arranges all of the CrewMember data correctly.
      */
     public String toString() {
-        return "- " + getName() + " (" + getRank() + ") - " + getPosition() + " [" + getSpecies() + "]\n";
+        return getName() + "," + getRank();
     }
 }
