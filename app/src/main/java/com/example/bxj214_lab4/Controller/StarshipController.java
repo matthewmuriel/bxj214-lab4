@@ -50,6 +50,7 @@ public class StarshipController {
 
             tokens[0] = tokens[0].toLowerCase();
             tokens = tokens[0].split(" ");
+            System.out.println(tokens[tokens.length-1]);
 
             profile.setImageResource(activity.getResources().getIdentifier(tokens[tokens.length-1],"id",activity.getPackageName()));
 
