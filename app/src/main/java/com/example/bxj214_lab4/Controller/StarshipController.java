@@ -42,6 +42,7 @@ public class StarshipController {
             tokens = c.split(",");
             TextView name = (TextView) activity.findViewById(activity.getResources().getIdentifier("crewName"+counter,"id", activity.getPackageName()));
             name.setText(tokens[0]);
+            counter++;
         }
 
     }
