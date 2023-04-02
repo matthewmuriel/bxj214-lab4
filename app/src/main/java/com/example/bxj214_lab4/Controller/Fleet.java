@@ -58,12 +58,14 @@ public class Fleet {
      *
      * @return returns the contents of all of the starship objects
      */
-    public String getShips() {
-        String ships = "";
+    public String getShipData(String reg) {
+        String ship = "";
         for (Starship s : starShips) {
-            ships += s;
+            if (s.getShipName().equals(reg)){
+                ship = s.getShipName();
+            }
         }
-        return ships;
+        return ship;
     }
 
     /**
