@@ -84,7 +84,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -134,7 +134,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -184,7 +184,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -234,7 +234,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -285,7 +285,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -335,7 +335,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -385,7 +385,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
@@ -434,7 +434,7 @@
                     android:adjustViewBounds="false"
                     android:contentDescription="@string/profileimg"
                     android:cropToPadding="false"
-                    android:scaleType="fitStart"
+                    android:scaleType="centerCrop"
                     app:srcCompat="@drawable/kirk" />
 
                 <LinearLayout
