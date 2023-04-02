@@ -45,6 +45,9 @@ public class CrewMember {
      * @return
      */
     public String getRank() {
+        if (rank.equals("no rank")) {
+            return "";
+        }
         return rank;
     }
 
