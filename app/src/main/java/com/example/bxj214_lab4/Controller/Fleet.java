@@ -61,7 +61,7 @@ public class Fleet {
     public String getShipData(String reg) {
         String ship = "";
         for (Starship s : starShips) {
-            if (s.getShipName().equals(reg)){
+            if (s.getRegistry().equals(reg)){
                 ship = s.getShipName();
             }
         }
