@@ -5,7 +5,9 @@ import android.content.res.AssetManager;
 import com.example.bxj214_lab4.Model.Starship;
 
 import java.util.ArrayList;
+import java.util.*;
 import java.io.*;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Fleet {
@@ -69,10 +71,10 @@ public class Fleet {
     }
 
     public ArrayList<String> crewlist(String reg){
-        ArrayList<String> roster;
+        ArrayList<String> roster = new ArrayList<String>();
         for (Starship s : starShips) {
             if (s.getRegistry().equals(reg)){
-                roster = s.roster();
+                Collections.copy(roster,s.roster());
             }
         }
         return roster;
