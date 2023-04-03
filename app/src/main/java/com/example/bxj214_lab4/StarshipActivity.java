@@ -5,6 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.bxj214_lab4.Controller.StarshipController;
+/**
+ * StarShipActivity class which shows the activity_starship.xml to the user
+ * invokes the MainController class to receive, interpret, & update the model class
+ *
+ * @author Matthew Muriel bxj214
+ * UTSA CS 3443 - Lab 4
+ * Spring 2023
+ */
 
 public class StarshipActivity extends AppCompatActivity {
 

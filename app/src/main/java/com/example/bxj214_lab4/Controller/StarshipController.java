@@ -12,22 +12,47 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
+/**
+ * StarShipController class which creates a Fleet object and builds out the starship roster
+ * Is a part of the Controller class
+ *
+ * @author Matthew Muriel bxj214
+ * UTSA CS 3443 - Lab 4
+ * Spring 2023
+ */
 
 public class StarshipController {
     private final Activity activity;
     private Fleet fleet;
 
+    /**
+     * AvengersController constructor method which builds the variables for the Controller class
+     *
+     * @param activity
+     */
     public StarshipController(Activity activity){
         this.activity = activity;
         this.fleet = new Fleet();
     }
 
+    /**
+     * initialize method which calls the loadStarship() method from the Fleet object
+     * the update() method is then called to update the GUI
+     *
+     * */
     public void initialize(){
         fleet.loadStarship(activity.getAssets());
 
         update(activity.getIntent().getStringExtra("reg"));
     }
 
+    /**
+     * update method which updates the GUI to display all of the crew members who match the given
+     * registration
+     * will call various methods from the model classes to collect the right data
+     *
+     * @param reg
+     * */
     public void update(String reg){
         ArrayList<String> crewList = new ArrayList<String>();
         String[] tokens;
