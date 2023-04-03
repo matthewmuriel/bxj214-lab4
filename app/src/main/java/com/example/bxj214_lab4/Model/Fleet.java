@@ -1,4 +1,4 @@
-package com.example.bxj214_lab4.Controller;
+package com.example.bxj214_lab4.Model;
 
 import android.content.res.AssetManager;
 

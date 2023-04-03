@@ -4,14 +4,11 @@ import android.app.Activity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.bxj214_lab4.Model.Starship;
+import com.example.bxj214_lab4.Model.Fleet;
 import com.example.bxj214_lab4.R;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Locale;
+
 /**
  * StarShipController class which creates a Fleet object and builds out the starship roster
  * Is a part of the Controller class
