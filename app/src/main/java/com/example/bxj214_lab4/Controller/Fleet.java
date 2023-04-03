@@ -30,10 +30,10 @@ public class Fleet {
     }
 
     /**
-     * Method for loading the Starship CSV files one at a time.
-     * Scans the file for the first 3 strings and creates a crew list array based on the remaining information
-     * A new starship object is then created based on the information.
-     * After creation it then calls addStarShip to add the object to the starShips ArrayList
+     * Method for loading starships from csv file.
+     * Will also call open ship.buildRoster() to build out the crew list if there are any crew members associated with the reg.
+     *
+     * @param manager
      * @throws RuntimeException
      */
     public void loadStarship(AssetManager manager){
@@ -56,9 +56,9 @@ public class Fleet {
     }
 
     /**
-     * Getter method that gets the name of all of the starships
+     * Getter method that gets the name of the requested starship
      *
-     * @return returns the contents of all of the starship objects
+     * @return returns the contents of the requested starship objects
      */
     public String getShipData(String reg) {
         String ship = "";
@@ -70,6 +70,11 @@ public class Fleet {
         return ship;
     }
 
+    /**
+     * crewList method that reads the csv files for crewmembers matching the given ship registration.
+     *
+     * @param reg
+     * */
     public ArrayList<String> crewlist(String reg){
         ArrayList<String> roster = new ArrayList<String>();
         for (Starship s : starShips) {

@@ -49,7 +49,7 @@ public class StarshipController {
     /**
      * update method which updates the GUI to display all of the crew members who match the given
      * registration
-     * will call various methods from the model classes to collect the right data
+     * will call various methods from the model classes to collect the right data needed for the display.
      *
      * @param reg
      * */
